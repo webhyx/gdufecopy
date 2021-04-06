@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  /* background: url(main_bg.jpg) no-repeat bottom; */
+  font-family: "Arial","Microsoft YaHei","\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+}
+ul {
+    list-style: none;  /*去掉ul列表的黑实心点*/
+  }
+  
+  a {
+    text-decoration: none; /*去掉导航链接的下划横线*/
+  }
+
+  /* 顶部 */
+  header {
+      width: 100%;
+      height: 35px;
+      background-color: #3e8b94;
+  }
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 200px;
+  }
+
+  .navleft .vis {
+      display: flex;
+  }
+
+  .navright .in{
+      display: flex;
+  }
+
+  .nav .navleft .vis .visitor {
+    font-size: 13px;
+    color: #cad3d4;
+    line-height: 35px;
+    margin: 0 10px;
+  }
+  .nav .navright .in .inf{
+    font-size: 13px;
+    color: #cad3d4;  
+    line-height: 35px;
+    margin: 0 10px;
+  }
+
+  .lg {
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    margin-bottom: -3px;
+    margin-right: 2px;
+  }
+
+  .lg1 {
+    display: inline-block;
+    width: 13px;
+    height: 17px;
+    margin-bottom: -3px;
+    margin-right: 3px;
+  }
+  
+  .wrapperhead {
+    background: url(head_bg.jpg);
+    width: 100%;
+    height: 126px;
+  }
+
+  .wh {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+  
+  }
+
+   .gctrainsearch {
+    display: flex;
+  
+  } 
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .gctrainsearch {
+    display: flex;
+    align-items: center;
+  
+  }
+  .train img {
+    width: 367px;
+    height: 50px;
+  }
+  .search {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #10959e;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .search  img{
+    width: 35px;
+    height: 35px;
+  }
+  
+  .navg {
+    background-color: #005E60;
+    width: 100%;
+    height: 45px;
+  }
+
+  .navlist {
+    display: flex;
+    height: 100%;
+    width: 1136px;
+    margin: 0 auto;
+  }
+
+  .navl {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    justify-content: space-between;
+  }
+
+  .navmem {
+    padding: 0 24px;
+  }
+
+  .aname {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* 轮播图 */
+
+/* .banner {
+  width: 1100px;
+  margin: 0 auto;
+} */
+
+  .bannerjpg {
+    position: relative;
+    width: 1100px;
+    height: 370px;
+    background: url(2d181c5f-77d1-42c5-8eb7-c29f602cb70b.jpg);
+    background-size: cover; /* ? */
+    margin: 0 auto ;
+  }
+
+  .navigation {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    display: block;
+    top: 50%;
+    margin-top: -25px;
+    opacity: 0.5; /* 透明度 */
+  }
+  .nav-next {
+    background: url(slide_next.png) no-repeat right top;
+    right: 20px;
+  }
+
+  .nav-prev {
+    background: url(slide_next.png) no-repeat left top;
+    left: 20px;
+  }
+
+  .pagination {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    margin-right: -25px;
+  }
+  .focuspage {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(slide_btns.png) no-repeat center top;
+    margin-right: 5px;
+    opacity: 0.8;
+  }
+  /* 主体 */
+  main {
+     background: url(main_bg.jpg) no-repeat ;
+    background-position: -201px 763px;
+    /* background-position: 0 -50px; */
+  }
+
+  .main1 {
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+  }
+  .inner {
+
+    width: 100%;
+    padding: 20px 0px;
+    margin: 0 auto;
+  }
+
+  .modular {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .moleft {
+    width: 673px;
+  }
+
+  .newsenter {
+    color: #666;
+  }
+  .newstop {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #f6810d;
+    margin-bottom: 14px;
+  }
+
+  .newscon {
+    display: flex;
+  }
+
+  .summleft {
+    background-color: #00707a;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #fff;
+    height: 54px;
+    text-align: center; /* 文本排列到中间 */
+    line-height: 25px;
+  }
+
+  .summright {
+    line-height: 26px;
+    padding: 15px 5px 0 5px;
+    font-size: 14px;
+    color: #817d7d;
+  }
+
+  .cnllist .newscon {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+
+  .newsword a{
+    color: black;
+    font-size: 15px;
+  }
+
+  .moright {
+   width: 35%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  }
+
+ /*  .media {
+    height: 47%;
+  } */
+  .notmore {
+    color: #666;
+  }
+  .notice {
+    width: 100%;
+  }
+  .newsdate {
+    color: #9C9C9C;
+    font-size: 15px;
+  }
+
+  .noticetop{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border-bottom: 2px solid #f6810d;
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+  }
+
+  .noticemiddle {
+    display: flex;
+    width: 100%;
+  } 
+
+  .notdate  {
+    width: 60px;
+    height: 54px;
+    background-color: #EDB700;
+  }
+
+  .notdate .notmonth {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .notdate .notday {
+    text-align: center;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .nottit {
+    height: 54px;
+    flex: 1;
+    background-color: #f0f0e5;
+    vertical-align: middle;
+    }
+
+    .ntp {
+      padding-left: 10px;
+      /* line-height: 54px; */
+      padding-top: 5px;
+    }
+  .ntcon {
+    width: 240px;
+    height: 54px;
+    color: black;
+    display: block; /* 必须有block */
+   /*  white-space: nowrap; */ /*强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象*/
+  text-overflow: ellipsis;  /*与white-space: nowrap; overflow: hidden;结合实现文本溢出显示省略号*/
+  overflow: hidden;
+  }
+
+  .noticebottom {
+    width: 100%;
+  }
+
+  .notlist {
+    width: 100%;
+  }
+  
+  .notcont {
+    display: flex; /* 设置了flex后notcontd的lineheight就生效？ */
+    justify-content: space-between;
+    height: 25px;
+    margin: 7px 0;
+  }
+  .notcontspan {
+    width: 70%;
+    display: inline-block;
+  }
+  .notcont .notconta {
+    display: block; /* 必须有block */
+    white-space: nowrap; /*强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象*/
+  text-overflow: ellipsis;  /*与white-space: nowrap; overflow: hidden;结合实现文本溢出显示省略号*/
+  overflow: hidden;
+  color: black;
+  }
+
+  .notcontd {
+    color: #9C9C9C;
+    font-size: 15px;
+    padding-left: 3px;
+    line-height: 25px;
+  }
+  /* 图片链接 */
+  .main2 {
+    width: 100%;
+  }
+
+  .piclink {
+    width: 1100px;
+    height: 266px;
+    margin: 0 auto;
+  }
+
+  .piclist {
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .pcl .pl {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  
+  .pl .icons {
+    display: inline-block;
+    background: url(icon.png);
+    width: 46px;
+    height: 50px;
+    margin-top: 16px;
+    margin-bottom: 16.45px;
+    margin-right: 5px;
+    opacity: 0.6;
+    
+   }
+
+   
+
+
+  .picss {
+    display: flex;
+    background-color: #f0f0e5;
+    height: 31%;
+    align-items: center;
+    padding-left: 58px;
+    color: black;
+    font-size:18px;
+  }
+
+  .pcl {
+    width: 23.5%;
+  }
+  
+  .infpublic {
+    background-color: #00707a;
+    height: 65.5%;
+    color: white;
+  }
+
+  .library {
+    background-color: #e19e35;
+    height: 65.5%;
+    color: white;
+  }
+  .infbuil .icons {
+    background-position: -21px -12px;
+  }
+  
+  .blackboard .icons {
+    background-position: -142px -8px;
+  }
+
+  .VPN .icons {
+    background-position: -261px -8px;
+  }
+
+  .infpublic .icons {
+    width: 95px;
+    height: 92px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    background-position:  -980px -11px;
+  }
+
+  .callinf .icons {
+    background-position: -391px -12px;
+  }
+
+  .schcontri .icons {
+    background-position: -519px -14px;
+  }
+
+  .internews .icons {
+    background-position: -647px -14px;
+
+  }
+
+  .servserc .icons {
+    background-position: -765px -14px;
+  }
+
+  .leadday .icons {
+    background-position: -878px -14px;
+  }
+
+  .library .icons {
+    width: 95px;
+    height: 92px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    background-position: -1098px -6px;
+  }
+
+  /* 专题网站 */
+  .main3 {
+    width: 1100px;
+    margin:0px auto;
+    padding-bottom: 58px;
+  }
+  
+  .specialweb {
+    margin:25px 0 20px 0; 
+
+  }
+  .speweblist {
+    display: flex;
+    /* width: 100%; */
+  }
+
+  .spewebcons {
+    display: flex;
+    width: 25%;
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .speweba {
+    color: white;
+    text-shadow: 1px 2px 2px #000;
+  }
+  .sp1 {
+    background-color: #e19e35;
+  }
+
+  .sp2 {
+    background-color: #28828a;
+  }
+  
+  .sp3 {
+    background-color: #7f307e;
+  }
+
+  .sp4 {
+    background-color: #566175;
+  }
+
+  .sp5 {
+    background-color: #363c6b;
+  }
+  
+
+
+  .footer {
+    display: flex;
+    background: #016871 url(foot_bg.jpg) no-repeat center ;
+    background-position: -201px 0px;
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .schoinfo {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .de {
+    margin: 3.5px 0;
+  }
+  .shcoinfoqr {
+    display: flex;
+  }
+
+  .infodetail .de {
+    color: #a3bdc0;
+    font-size: 13px;
+  }
+
+  .logchat {
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  .qrinfo {
+    color: #a3bdc0;
+    font-size: 14px;
+  }
+
+  .bule {
+    width: 100%;
+    text-align: center;
+  } 
+  
+  .bulelink {
+    display: block;
+    margin: 5px auto;
+  }
